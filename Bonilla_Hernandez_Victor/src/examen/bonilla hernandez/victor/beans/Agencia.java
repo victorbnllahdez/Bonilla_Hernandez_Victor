@@ -5,4 +5,6 @@ public class Agencia{
     private String nombre;
     private String pais;
 
+    Arraylist<Agencia> lstAgencias;
+
 }

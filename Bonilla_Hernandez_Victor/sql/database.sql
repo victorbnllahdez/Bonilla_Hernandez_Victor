@@ -27,9 +27,10 @@ velocidad_maxima VARCHAR(20),
 combustible VARCHAR(20),
 vida_util VARCHAR(20),
 temperatura_maxima VARCHAR(20),
+id_satelites INTEGER(4),
 autor_examen VARCHAR(150) NOT NULL,
 CONSTRAINT PK_DETALLE_SATELITE PRIMARY KEY(id_detalle_satelite),
-CONSTRAINT FK_DETALLE_SATELITE_id_satelite UNIQUE FOREIGN KEY (id_satelite) REFERENCES SATELITES(id_satelites),
+CONSTRAINT FK_DETALLE_SATELITE_id_satelites UNIQUE FOREIGN KEY (id_satelites) REFERENCES SATELITES(id_satelites),
 );
 
 
